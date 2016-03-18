@@ -36,7 +36,15 @@
       </a>
     </div>
   </div>
-  <% } %>
+  <% }else{ %>
+  <div class="panel">
+    <div class='inner'>
+      <a href='/signin' id='create_topic_btn'>
+        <span class='span-success'>注册登陆后发布话题</span>
+      </a>
+    </div>
+  </div>
+  <%}%>
 
   <% if (!current_user || !current_user.isAdvanced) { %>
     <%- partial('./_ads') %>
