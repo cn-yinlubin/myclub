@@ -67,14 +67,14 @@
 <!-- navbar -->
 <div class='navbar'>
   <div class='navbar-inner'>
-    <div class='container'>
-      <a class='brand' href='/'>
-        <% if (config.site_logo) {%>
-          <img src="<%- staticFile(config.site_logo) %>" />
-        <%} else {%>
-          <%- config.name %>
-        <%}%>
-      </a>
+    <!--<div class='container'>-->
+      <!--<a class='brand' href='/'>-->
+        <!--<% if (config.site_logo) {%>-->
+          <!--<img src="<%- staticFile(config.site_logo) %>" />-->
+        <!--<%} else {%>-->
+          <!--<%- config.name %>-->
+        <!--<%}%>-->
+      <!--</a>-->
 
       <form id='search_form' class='navbar-search' action="/search">
         <input type='text' id='q' name='q' class='search-query span3' value=''/>
@@ -91,7 +91,7 @@
             </a>
         </li>
         <% } %>
-        <li><a href='/getstart'>新手入门</a></li>
+        <!--<li><a href='/getstart'>新手入门</a></li>-->
         <li><a href='/api'>API</a></li>
         <%
         var site_navs = config.site_navs || [];
@@ -122,18 +122,18 @@
   <%- body %>
 </div>
 <div id='backtotop'>回到顶部</div>
-<div id='footer'>
-  <div id='footer_main'>
-    <div class="links">
-      <a class='dark' href='/rss'>RSS</a>
-      |
-      <a class='dark' href='https://github.com/cnodejs/nodeclub/'>源码地址</a>
-    </div>
+<!--<div id='footer'>-->
+  <!--<div id='footer_main'>-->
+    <!--<div class="links">-->
+      <!--<a class='dark' href='/rss'>RSS</a>-->
+      <!--|-->
+      <!--<a class='dark' href='https://github.com/cnodejs/nodeclub/'>源码地址</a>-->
+    <!--</div>-->
 
-    <%- partial('./_sponsors') %>
+    <!--<%- partial('./_sponsors') %>-->
 
-  </div>
-</div>
+  <!--</div>-->
+<!--</div>-->
 <div id="sidebar-mask"></div>
 
 <% if (config.google_tracker_id) { %>
